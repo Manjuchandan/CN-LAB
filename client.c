@@ -1,4 +1,5 @@
-#include <stdio.h>
+
+  #include <stdio.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <string.h>
@@ -12,7 +13,7 @@ int main(){
 
   int clientSocket;
   char buffer[1024],fname[255];
-  struct sockaddr serverAddr;
+  struct sockaddr_in serverAddr;
   socklen_t addr_size;
 
   /*---- Create the socket. The three arguments are: ----*/
